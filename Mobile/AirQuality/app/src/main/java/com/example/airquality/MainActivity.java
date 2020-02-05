@@ -25,25 +25,25 @@ public class MainActivity extends AppCompatActivity {
         chartView.setValueSelectionEnabled(true);
 
         // Create a Calendar object dated 5 minutes ago
-        //Calendar calendar = Calendar.getInstance();
-        //calendar.add(Calendar.DAY_OF_WEEK, -1);
+        Calendar calendar = Calendar.getInstance();
+        calendar.add(Calendar.DAY_OF_WEEK, -1);
 
         // Create a line chart from Field1 of ThinkSpeak Channel 9
         tsChart = new ThingSpeakLineChart(904142, 1);
         // Get 200 entries at maximum
-        //tsChart.setNumberOfEntries(200);
+        tsChart.setNumberOfEntries(200);
         // Set value axis labels on 10-unit interval
-        //tsChart.setValueAxisLabelInterval(10);
+        tsChart.setValueAxisLabelInterval(10);
         // Set date axis labels on 5-minute interval
-        //tsChart.setDateAxisLabelInterval(1);
+        tsChart.setDateAxisLabelInterval(1);
         // Show the line as a cubic spline
-        //tsChart.useSpline(true);
+        tsChart.useSpline(true);
         // Set the line color
-        //tsChart.setLineColor(Color.parseColor("#D32F2F"));
+        tsChart.setLineColor(Color.parseColor("#D32F2F"));
         // Set the axis color
         tsChart.setAxisColor(Color.parseColor("#455a64"));
         // Set the starting date (5 minutes ago) for the default viewport of the chart
-        //tsChart.setChartStartDate(calendar.getTime());
+        tsChart.setChartStartDate(calendar.getTime());
         // Set listener for chart data update
         tsChart.setListener(new ThingSpeakLineChart.ChartDataUpdateListener() {
             @Override
