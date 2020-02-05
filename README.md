@@ -4,10 +4,10 @@ In this project we are going to make an **IoT Based Air Pollution Monitoring Sys
 
 ### Prerequisites
 
-* MQ5 Gas sensor 1
-* Arduino Uno 2
-* Wi-Fi module ESP8266 3
-* Breadboard 4
-* Buzzer 5
+* MQ5 Gas sensor 
+* Arduino Uno 
+* Wi-Fi module ESP8266 
+* Breadboard 
+* Buzzer 
 
 
